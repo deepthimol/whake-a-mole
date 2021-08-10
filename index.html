@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/styles.css">
+    <title>Whake a mole</title>
+</head>
+
+<body>
+    <div class="whack__a__mole__container">
+        <div class="score__board">
+            <h2>Whake a Mole</h2>
+            <ul class="controls">
+                <li>
+                    <input type="button" value="start" onclick="start()" />
+                </li>
+                <li>
+                    <input type="button" value="stop" onclick="stop()" />
+                </li>
+                <li>
+                    <input type="button" value="clear" onclick="clearData()" />
+                </li>
+            </ul>
+            <h3>Score:
+                <span class="score"></span>
+            </h3>
+            <h3>Time Left:
+                <span id="time__left"></span>
+            </h3>
+        </div>
+        <div class="whack__a__mole">
+            <div class="mole__game">
+                <span class="mole__hole"></span>
+                <span class="mole__mole" id="1"></span>
+            </div>
+            <div class="mole__game">
+                <span class="mole__hole"></span>
+                <span class="mole__mole" id="2"></span>
+            </div>
+            <div class="mole__game">
+                <span class="mole__hole"></span>
+                <span class="mole__mole" id="3"></span>
+            </div>
+            <div class="mole__game">
+                <span class="mole__hole"></span>
+                <span class="mole__mole" id="4"></span>
+            </div>
+            <div class="mole__game">
+                <span class="mole__hole"></span>
+                <span class="mole__mole" id="5"></span>
+            </div>
+            <div class="mole__game">
+                <span class="mole__hole"></span>
+                <span class="mole__mole" id="6"></span>
+            </div>
+            <div class="mole__game">
+                <span class="mole__hole"></span>
+                <span class="mole__mole" id="7"></span>
+            </div>
+            <div class="mole__game">
+                <span class="mole__hole"></span>
+                <span class="mole__mole" id="8"></span>
+            </div>
+            <div class="mole__game">
+                <span class="mole__hole"></span>
+                <span class="mole__mole" id="9"></span>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="./javacript/app.js"></script>
+
+</body>
+
+</html>

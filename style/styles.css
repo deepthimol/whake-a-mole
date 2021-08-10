@@ -1,0 +1,137 @@
+.whack__a__mole__container {
+  display: flex;
+}
+.whack__a__mole { 
+    display: flex;
+    flex-wrap: wrap;
+}
+.mole__game {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+    
+  .whack__a__mole {
+    margin: 0 auto;
+    padding: 0;
+    background-color: #07613c;
+    max-width:900px;
+    padding-top: 50px;
+  }
+  
+  .mole__game {
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+    min-width: 200px;
+    min-height: 150px;
+    align-items: center;
+    position: relative;
+  }
+
+  .mole__hole {
+    background-color: #1b1f1f;
+    min-height: 100px;
+    min-width: 150px;
+    border-radius: 50%;
+    box-shadow: 2px 0px 8px 10px #382b2b;
+  }
+  .mole__mole {
+    min-width: 200px;
+    min-height: 258px;
+    position: absolute;
+  }
+
+  .opened__eye {
+    cursor: pointer;
+    background-image: url('../images/mole1.png');
+    background-size: 100px;
+    top: -1em;
+    left: 4.2em;
+    background-repeat: no-repeat;
+    animation-name: opened__mole;
+    animation-duration: 3s;
+    animation-iteration-count:infinite ;
+  }
+
+  .scored__mole {
+    background-image: url('../images/mole2.png');
+    top: 25px;
+    background-size: 150px;
+    animation-name: scored__m;
+    animation-duration: 4s;
+    animation-iteration-count:infinite ;
+    background-repeat: no-repeat;
+    left:3em;
+  }
+   
+  .hide__mole{
+    display: none;
+  }
+  
+  
+  @keyframes opened__mole {
+  
+    from {
+      top:-1em;
+      width:100%
+    }
+  
+    to {
+      top:-3em;
+      opacity: 1px;
+    }
+  }
+
+  @keyframes scored__m {
+    0% { opacity: 0;  transform: scale(0.001); }
+    10% { opacity: 1; transform: scale(1); }
+    95% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0;  transform: scale(0.001); }
+  }
+  .score__board {
+    padding: 10px;
+
+  }
+
+  .controls {
+    list-style-type: none;
+    display: flex;
+    padding: 0px;
+  }
+
+  
+  .controls li {
+    padding-right: 10px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .whack__a__mole__container {
+      display: block;
+    }
+
+    .mole__game {
+      min-width: 60px;
+      min-height: 78px;
+    }
+
+    .mole__hole {
+      min-height: 42px;
+      min-width: 69px;
+    }
+    .mole__mole {
+      min-height: 42px;
+      min-width: 69px;
+    }
+
+    .opened__eye {
+      background-size: 50px;
+      top: 5em;
+      left: 1.2em;
+    }
+
+    .whack__a__mole {
+      margin: 10px;
+      min-width:310px;
+    }
+  }
